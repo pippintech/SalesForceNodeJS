@@ -1,0 +1,44 @@
+<div>Account Details:</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-sm-2">Account Id</div>
+    <div class="col-sm-2">Account Name</div>
+    <div class="col-sm-2">Billing City</div>
+    <div class="col-sm-2">Account Number</div>
+    <div class="col-sm-2">Phone</div>
+          <button ng-click="sforderlist.createNewOrder()">Create New Order</button>
+    
+    <br/><br/>
+</div>
+    <div class="row">
+        <div class="col-sm-2">{{sforderlist.sfaccount.Id}}</div>
+        <div class="col-sm-2">{{sforderlist.sfaccount.Name}}</div>
+        <div class="col-sm-2">{{sforderlist.sfaccount.BillingCity}}</div>
+        <div class="col-sm-2">{{sforderlist.sfaccount.AccountNumber}}</div>
+        <div class="col-sm-2">{{sforderlist.sfaccount.Phone}}</div>
+    
+</div>
+ <br/><br/>
+
+ <br/><br/>
+ <h2>Order Details</h2>
+<div class="row">
+    <div class="col-sm-3">Order Id</div>
+    <div class="col-sm-3">Effective Date</div>
+    <div class="col-sm-3">Status</div>
+    <div class="col-sm-3">Order Number</div>
+   
+    <br/><br/>
+</div>
+
+  <div ng-repeat="sforder in sforderlist.sforder">
+    <div class="row">
+        <div class="col-sm-3">{{sforder.Id}}</div>
+        <div class="col-sm-3">{{sforder.EffectiveDate}}</div>
+        <div class="col-sm-3">{{sforder.Status}}</div>
+        <div class="col-sm-3">{{sforder.OrderNumber}}</div>   
+       
+    </div>
+</div>
+ </div>

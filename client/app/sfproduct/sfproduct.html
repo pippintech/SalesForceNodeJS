@@ -1,0 +1,22 @@
+<div>Product List</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-sm-4">Product Id</div>
+    <div class="col-sm-4">Product Name</div>
+    
+    <br/><br/>
+</div>
+ <div ng-repeat="sfproduct in sfproductList.sfproducts">
+    <div class="row">
+        <div class="col-sm-4">{{sfproduct.Id}}</div>
+        <div class="col-sm-4">{{sfproduct.Name}}</div>
+       
+        <div class="col-sm-4">
+            <button ng-click="sfproductList.AddProduct(sfproduct)">select</button>
+          
+        <br/><br/>
+
+    </div>
+</div>
+ </div>

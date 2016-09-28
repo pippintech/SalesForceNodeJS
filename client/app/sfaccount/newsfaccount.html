@@ -1,0 +1,50 @@
+		<form name="salesfroceAccountForm">
+			<div >
+				<label for="accountName" class="col-xs-6">Account Name:</label>
+
+				<input id="accountName" name="accountName" type="text" class="col-xs-6" ng-model="sfaccount.newAccount.Name" required>
+
+			</div>
+			<br/>
+			<br/>
+			<div >
+				<label for="accountNumber" class="col-xs-6">Account Number:</label>
+				<input id="accountNumber" type="text" class="col-xs-6" ng-model="sfaccount.newAccount.AccountNumber" required>
+
+			</div>
+			<br/>
+			<br/>
+			<div>
+				<label for="billingCity" class="col-xs-6">Billing City:</label>
+				<input id="billingCity" type="text" class="col-xs-6" ng-model="sfaccount.newAccount.BillingCity" required>
+
+			</div>
+			<br/>
+			<br/>
+			<div >
+				<label for="billingCountry" class="col-xs-6">Billing Country:</label>
+				<input id="billingCountry" type="text" class="col-xs-6" ng-model="sfaccount.newAccount.BillingCountry" required>
+
+			</div>
+			<br/>
+			<br/>
+			<div >
+				<label for="" class="col-xs-6">Phone Number:</label>
+				<input id="phoneNumber" type="text" class="col-xs-6" ng-model="sfaccount.newAccount.Phone" required maxlength="10">
+
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-block" ng-disabled="salesfroceAccountForm.$invalid" ng-click="sfaccount.postSFAccount()">
+					Register
+				</button>
+				
+			</div>
+
+		</form>
+
+

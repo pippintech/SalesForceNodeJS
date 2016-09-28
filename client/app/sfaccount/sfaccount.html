@@ -1,0 +1,26 @@
+<a href="/newsfaccount">Create New Account</a>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-sm-2">Account Id</div>
+    <div class="col-sm-2">Account Name</div>
+    <div class="col-sm-2">Billing City</div>
+    <div class="col-sm-2">Account Number</div>
+    <div class="col-sm-2">Phone</div>
+    <br/><br/>
+</div>
+ <div ng-repeat="sfaccount in sfaccountList.sfAccounts">
+    <div class="row">
+        <div class="col-sm-2">{{sfaccount.Id}}</div>
+        <div class="col-sm-2">{{sfaccount.Name}}</div>
+        <div class="col-sm-2">{{sfaccount.BillingCity}}</div>
+        <div class="col-sm-2">{{sfaccount.AccountNumber}}</div>
+        <div class="col-sm-2">{{sfaccount.Phone}}</div>
+        <div class="col-sm-2">
+            <button ng-click="sfaccountList.getAccountOrders(sfaccount)">Edit</button>
+         
+        <br/><br/>
+
+    </div>
+</div>
+ </div>

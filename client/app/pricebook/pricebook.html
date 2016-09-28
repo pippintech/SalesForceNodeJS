@@ -1,0 +1,23 @@
+<div>Pricebook List</div>
+
+<br/>
+<br/>
+<div class="row">
+    <div class="col-sm-4">Price Book Id</div>
+    <div class="col-sm-4">Price Book Name</div>
+    
+    <br/><br/>
+</div>
+ <div ng-repeat="sfpricebook in pricebooklist.sfpricebook">
+    <div class="row">
+        <div class="col-sm-4">{{sfpricebook.Id}}</div>
+        <div class="col-sm-4">{{sfpricebook.Name}}</div>
+       
+        <div class="col-sm-4">
+            <button ng-click="pricebooklist.addPriceBookToOrder(sfpricebook)">select</button>
+          
+        <br/><br/>
+
+    </div>
+</div>
+ </div>
